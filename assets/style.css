@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #470A69;
+    --secondary-color: #000000;
+    --tertiary-color: #FFFFFF;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+}
+
+li {
+    padding: 0 10px;
+}
+
+.hero {
+    position: relative; 
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {    
+    content: "";
+    background-image: url('../assets/images/Gym-in-Springfield-NJ.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+}
+
+#join {
+    position: relative;
+    color: var(--tertiary-color);  
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    white-space: normal;
+    font-size: 14px;
+}
+
+#join:hover {
+    filter: brightness(150%);
+}
